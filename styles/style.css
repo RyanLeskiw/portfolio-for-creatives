@@ -36,7 +36,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dokdo&display=swap");
 
 /* Rubik Font (clean and modern for body text) */
-@import url("'https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap'");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Inter Font (great for readability and minimal design) */
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
@@ -105,15 +105,15 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Young Serif", serif;
+  --font-family-body: "Inter", sans-serif;
   --font-family-heading: "Dokdo", sans-serif;
-  --font-family-project-title: "Libre Bodoni", serif;
+  --font-family-project-title: "Young Serif", serif;
   /* Core Colours */
   --color-text-primary: #000000;
   --color-text-secondary: #333;
   --color-accent-primary: #ffffff;
   --color-accent-secondary: #5d8a54;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-overlay-primary: #5d8a54;
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -124,24 +124,24 @@
   /* Headings */
   --h1-color: #5d8a54;
   --h2-color: #5d8a54;
-  --h3-color: #5d8a54;
+  --h3-color: #ffffff;
   --h4-color: #5d8a54;
   --h5-color: #5d8a54;
   --h6-color: #5d8a54;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
-  --color-text-project-description: #222;
+  --color-text-project-description: #e2e91c;
   --color-text-project-sidebar: #222;
   --color-text-project-title: #5200ff;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #7cb0ff;
-  --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link: #ffffff;
+  --color-link-hover: #5d8a54;
+  --color-link-visited: #ffffff;
   /* Navigation */
   --color-nav-link: #ffffff;
-  --color-nav-link-hover: #321575;
+  --color-nav-link-hover: #5d8a54;
   --color-nav-arrow: #5200ff;
   --color-nav-arrow-hover: #000;
   --color-nav-arrow-stroke: #5200ff;
@@ -161,7 +161,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  /*--color-bg-selection: #5200ff;*/
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -453,7 +453,7 @@ svg {
 
 h1 {
   font-size: 2.2rem;
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-project-title);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -461,7 +461,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-project-title);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -505,6 +505,7 @@ p {
   line-height: 1.3;
   margin-bottom: 1rem;
   color: #ffffff;
+  font-family: var(--font-family-body);
 }
 
 strong {
@@ -604,7 +605,7 @@ sup {
 /* Unvisited link */
 a:link {
   color: var(--color-link);
-  text-decoration: none; /* Removes underline */
+  text-decoration: underline; /* Removes underline */
 }
 
 /* Visited link — after a user clicks and returns */
@@ -635,6 +636,7 @@ a:active {
 
 a.nav-link-primary {
   color: var(--color-nav-link);
+  text-decoration: none;
 }
 a.nav-link-primary:hover {
   color: var(--color-nav-link-hover);
@@ -713,6 +715,8 @@ a.nav-link-primary:hover {
 }
 .nav-branding-item {
   padding: var(--padding-tiny);
+  font-family: var(--font-family-project-title);
+  font-size: 2rem;
 }
 
 .nav-branding-logo {
