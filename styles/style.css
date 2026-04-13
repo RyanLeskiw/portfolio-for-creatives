@@ -147,8 +147,8 @@
   --color-nav-arrow-stroke: #5200ff;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
-  --color-bg-full-width: #f5f5f5;
-  --color-bg-project-description: #f5f5f5;
+  --color-bg-full-width: #000000;
+  --color-bg-project-description: #000000;
   --color-bg-sidebar-project: orangered;
   --color-bg-sidebar-work: lemonchiffon;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
