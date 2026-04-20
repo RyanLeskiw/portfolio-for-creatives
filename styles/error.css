@@ -1,5 +1,5 @@
 /* Error 404 text with gradient and glitch */
-.error-404 {
+/*.error-404 {
   font-size: 2rem;
   background: var(--color-gradient-hero);
   -webkit-background-clip: text;
@@ -12,7 +12,7 @@
 }
 
 /* Pseudo-elements for RGB splitting */
-.error-404::before,
+/*.error-404::before,
 .error-404::after {
   content: "404";
   position: absolute;
@@ -26,21 +26,21 @@
 }
 
 /* Red channel */
-.error-404::before {
+/*.error-404::before {
   clip-path: inset(0 66% 0 0);
   animation: glitch-red 0.4s infinite;
   transform: translate(-4px, 0);
 }
 
 /* Cyan channel */
-.error-404::after {
+/*.error-404::after {
   clip-path: inset(0 0 0 33%);
   animation: glitch-cyan 0.4s infinite;
   transform: translate(4px, 0);
 }
 
 /* Glitch animations */
-@keyframes glitch {
+/*@keyframes glitch {
   0% {
     transform: translate(0, 0) skew(0deg);
   }
