@@ -33,7 +33,7 @@
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
 /* Eczar Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap");
 
 /* Rubik Font (clean and modern for body text) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -74,7 +74,6 @@
 @import url("text-stroke.css");
 
 /* File for adding stroke shadow effect around text */
-@import url("stroke-shadow.css");
 
 /* File with extra experimental styles (e.g., fun animations or effects) */
 @import url("experiments.css");
@@ -106,7 +105,7 @@
 :root {
   /* Typography */
   --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Dokdo", sans-serif;
+  --font-family-heading: "Red Rose", sans-serif;
   --font-family-project-title: "Young Serif", serif;
   /* Core Colours */
   --color-text-primary: #000000;
@@ -571,7 +570,7 @@ sup {
 }
 .stroke-shadow {
   font-family: var(--font-family-heading);
-  font-size: 8rem;
+  font-size: 9.5rem;
 }
 
 /* 📂 Project grid title — used in grid view (like a portfolio gallery) */
@@ -731,9 +730,9 @@ a.nav-link-primary:hover {
   flex: 1;
   gap: 3rem;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   padding: var(--padding-small);
-  text-align: center; /* Keeps text centered */
+  text-align: left; /* Keeps text centered */
 }
 
 .hero-icon {
